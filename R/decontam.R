@@ -5,7 +5,7 @@ knn_adjacency_matrix = function(df, k, weighted=FALSE) {
     i = rep(1:nrow(xn), each=ncol(xn))
     j = t(xn) %>% as.vector()
     x = if(weighted) {t(nns$nn.dist) %>% as.vector()} else rep(1, length(i))
-    adj_mat = sparseMatrix(i=i, j=j, x=x)
+    adj_mat = sparseMatrix(i=i, j=j, x=x, dims=c(nrow(xn),nrow(xn)))
     return(adj_mat)
 }
 
