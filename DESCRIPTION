@@ -3,7 +3,7 @@ Title: cellAdmix
 Version: 0.0.0.9000
 Authors@R:
     c(
-        person("Jonathan", "Mitchel", , "mitchel@mit.edu", role = c("aut", "cre")),
+        person("Jonathan", "Mitchel", , "mitchel@mit.edu"),
         person("Viktor", "Petukhov", , "viktor.petukhov@pm.me", role = c("aut", "cre"))
     )
 Description: Evaluating and correcting cell admixtures in imaging-based spatial transcriptomics data
